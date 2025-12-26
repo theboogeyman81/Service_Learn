@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/syle.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <img src="/images/1.jpg">
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">S</div>
+                <span class="logo-text">School Name</span>
+            </a>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="main">
+        <div class="intro">
+            <div class="image_box">
+                <img src="/images/2.jpg">
+            </div>
+            <div class="text_box">
+                <h1>TO YOUR KIDS,WHY BETHEL?</h1><br>
+                <h2>Begin your Kids journey today and we will bring the ideas to life!</h2>
+                <p>Qualified, Dedicated & Inspiring Faculty. Activity based Learning. Affordable Fees structure.
+                    Free Karate, Spoken English (CHRYSALIS) Computer, Abacus, Yoga, & Other Curricular Activities.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link (mobile)
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>
