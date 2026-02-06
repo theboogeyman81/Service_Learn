@@ -3,67 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>BETHEL INDIA MISSION HIGH SCHOOL - Inspiring Minds, Shaping Futures</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="/images/1.jpg">
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">S</div>
-                <span class="logo-text">School Name</span>
-            </a>
-
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">BETHEL INDIA MISSION <span class="accent">HIGH SCHOOL</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Academics</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#apply" class="btn-apply">Apply Now</a>
             </div>
-        
         </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
     </nav>
 
-
-    <div class="main">
-        <div class="intro">
-            <div class="image_box">
-                <img src="/images/2.jpg">
-            </div>
-            <div class="text_box">
-                <h1>TO YOUR KIDS,WHY BETHEL?</h1><br>
-                <h2>Begin your Kids journey today and we will bring the ideas to life!</h2>
-                <p>Qualified, Dedicated & Inspiring Faculty. Activity based Learning. Affordable Fees structure.
-                    Free Karate, Spoken English (CHRYSALIS) Computer, Abacus, Yoga, & Other Curricular Activities.</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">✨ Admissions Open for 2025-26</div>
+                <h1 class="hero-title">Inspiring Minds, <span class="accent">Shaping Futures</span></h1>
+                <p class="hero-description">At BETHEL INDIA MISSION HIGH SCHOOL, we nurture curious minds and build confident leaders through excellence in education, character development, and innovation.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Start Your Journey →</a>
+                    <a href="#video" class="btn btn-secondary">▶ Watch Tour Video</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Students Enrolled</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Expert Faculty</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Programs Offered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">College Acceptance</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="image-carousel">
+                        <img src="images/11.jpg" alt="BETHEL INDIA MISSION HIGH SCHOOL" class="about-main-image carousel-img">
+                        <img src="images/12.jpg" alt="BETHEL INDIA MISSION HIGH SCHOOL" class="about-main-image carousel-img">
+                        <img src="images/8.jpg" alt="BETHEL INDIA MISSION HIGH SCHOOL" class="about-main-image carousel-img">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-label">ABOUT US</div>
+                    <h2 class="section-title">A Legacy of Excellence Since 1985</h2>
+                    <p class="section-text">For nearly four decades, BETHEL INDIA MISSION HIGH SCHOOL has been committed to providing exceptional education that prepares students for success in college and beyond. Our holistic approach combines rigorous academics with character development, creating well-rounded individuals ready to make their mark on the world.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="check">✓</span>
+                            <span>State-of-the-art learning facilities</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span>
+                            <span>Small class sizes for personalized attention</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span>
+                            <span>Award-winning STEM and Arts programs</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span>
+                            <span>Strong athletics and extracurricular activities</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span>
+                            <span>College counseling from day one</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span>
+                            <span>Safe and inclusive campus environment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Close menu when clicking on a link (mobile)
-        const links = document.querySelectorAll('.nav-links a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
-    
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">OUR PROGRAMS</div>
+                <h2 class="section-title">Discover Your Passion</h2>
+                <p class="section-subtitle">Our comprehensive curriculum offers diverse pathways for every student to explore their interests and develop their unique talents.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon blue">🔬</div>
+                    <h3 class="program-title">Science & Technology</h3>
+                    <p class="program-description">Explore physics, chemistry, biology with hands-on lab experiences and research opportunities.</p>
+                    <a href="#" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon green">📐</div>
+                    <h3 class="program-title">Mathematics</h3>
+                    <p class="program-description">From algebra to calculus, develop strong analytical and problem-solving skills.</p>
+                    <a href="#" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon pink">🎨</div>
+                    <h3 class="program-title">Visual Arts</h3>
+                    <p class="program-description">Express creativity through painting, sculpture, digital design, and photography.</p>
+                    <a href="#" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon orange">🎵</div>
+                    <h3 class="program-title">Performing Arts</h3>
+                    <p class="program-description">Discover talents in music, theater, and dance with world-class instructors.</p>
+                    <a href="#" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon purple">🌍</div>
+                    <h3 class="program-title">Languages & Humanities</h3>
+                    <p class="program-description">Master world languages and explore history, literature, and social sciences.</p>
+                    <a href="#" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon teal">💻</div>
+                    <h3 class="program-title">Computer Science</h3>
+                    <p class="program-description">Learn coding, robotics, AI fundamentals, and prepare for the digital future.</p>
+                    <a href="#" class="program-link">Learn More →</a>
+                </div>
+            </div>
+            <div class="programs-footer">
+                <a href="#all-programs" class="btn btn-secondary">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-tag achievement">Achievement</div>
+                    <div class="news-date">📅 February 3, 2026</div>
+                    <h3 class="news-title">BETHEL INDIA MISSION HIGH SCHOOL Students Win State Science Competition</h3>
+                    <p class="news-excerpt">Our talented science team brought home first place in the state-wide STEM competition, showcasing exceptional innovation.</p>
+                    <a href="#" class="news-link">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-tag event">Event</div>
+                    <div class="news-date">📅 February 1, 2026</div>
+                    <h3 class="news-title">Annual Spring Open House - March 15th</h3>
+                    <p class="news-excerpt">Join us for campus tours, meet our faculty, and discover what makes BETHEL INDIA MISSION HIGH SCHOOL special. All families welcome!</p>
+                    <a href="#" class="news-link">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-tag arts">Arts</div>
+                    <div class="news-date">📅 January 28, 2026</div>
+                    <h3 class="news-title">Drama Club Presents 'A Midsummer Night's Dream'</h3>
+                    <p class="news-excerpt">Don't miss our spring theatrical production running February 20-22 in the Performing Arts Center.</p>
+                    <a href="#" class="news-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎓</span>
+                        <span class="logo-text">BETHEL INDIA MISSION <span class="accent">HIGH SCHOOL</span></span>
+                    </div>
+                    <p class="footer-description">Inspiring minds and shaping futures since 1985. Excellence in education, character, and community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">i</a>
+                        <a href="#" class="social-icon">y</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Academics</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#student-life">Student Life</a></li>
+                        <li><a href="#athletics">Athletics</a></li>
+                        <li><a href="#alumni">Alumni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#portal">Parent Portal</a></li>
+                        <li><a href="#student-portal">Student Portal</a></li>
+                        <li><a href="#calendar">School Calendar</a></li>
+                        <li><a href="#lunch">Lunch Menu</a></li>
+                        <li><a href="#transportation">Transportation</a></li>
+                        <li><a href="#employment">Employment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>📍 123 Academic Drive<br>Springfield, ST 12345</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@oakwood.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 BETHEL INDIA MISSION HIGH SCHOOL. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                    <a href="#accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
